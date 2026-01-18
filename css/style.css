@@ -1503,3 +1503,6 @@ form {
   color: #666;
 }
 
+.da-slide {
+  pointer-events: none;
+}
