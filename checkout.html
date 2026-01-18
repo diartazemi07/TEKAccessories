@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | TEK Accessories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="da-checkout">
+
+<section class="da-checkout-section">
+  <div class="da-checkout-box">
+
+    <h2>Complete Your Order</h2>
+
+    <div class="da-order-info">
+      <p><strong>Product:</strong> <span id="order-product"></span></p>
+      <p><strong>Price:</strong> €<span id="order-price"></span></p>
+    </div>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Address</label>
+      <textarea required></textarea>
+
+      <button type="submit" class="da-btn-primary">
+        Place Order
+      </button>
+    </form>
+
+    <a href="products.html" class="da-btn-back">
+      ← Back to Products
+    </a>
+
+  </div>
+</section>
+
+<script src="js/checkout.js"></script>
+</body>
+
+
+</html>
