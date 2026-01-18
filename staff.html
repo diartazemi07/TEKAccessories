@@ -11,24 +11,65 @@
 
 <body id="da-staff">
 
-<nav class="tek-header">
-  <div class="tek-header-inner">
-    <div class="tek-logo">
-      TEK
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black tek-header">
+  <div class="container-fluid tek-header-inner">
 
-    <ul class="tek-nav">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="staff.html">Staff</a></li>
-      <li><a href="testimonials.html">Clients</a></li>
-      <li><a href="faq.html">Frequently Asked Questions</a></li>
-      <li><a href="location.html">Location</a></li>
-    </ul>
+    <!-- LOGO -->
+    <a class="navbar-brand tek-logo" href="home.html">
+      TEK
+    </a>
+
+    <!-- TOGGLER (MOBILE) -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#tekNavbar"
+            aria-controls="tekNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LINKS -->
+    <div class="collapse navbar-collapse justify-content-end" id="tekNavbar">
+      <ul class="navbar-nav tek-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="staff.html">Staff</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="testimonials.html">Clients</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">Frequently Asked Questions</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="location.html">Location</a>
+        </li>
+
+      </ul>
+    </div>
   </div>
 </nav>
+
 
 <!-- STAFF SECTION -->
 <section class="da-staff">

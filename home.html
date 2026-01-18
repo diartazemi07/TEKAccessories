@@ -12,27 +12,66 @@
 </head>
 
 <body id="da-home">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black tek-header">
+  <div class="container-fluid tek-header-inner">
 
- <nav class="tek-header">
-  <div class="tek-header-inner">
-    <div class="tek-logo">
+    <!-- LOGO -->
+    <a class="navbar-brand tek-logo" href="home.html">
       TEK
-    </div>
+    </a>
 
-    <ul class="tek-nav">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="staff.html">Staff</a></li>
-      <li><a href="testimonials.html">Clients</a></li>
-      <li><a href="faq.html">Frequently Asked Questions</a></li>
-      <li><a href="location.html">Location</a></li>
-    </ul>
+    <!-- TOGGLER (MOBILE) -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#tekNavbar"
+            aria-controls="tekNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LINKS -->
+    <div class="collapse navbar-collapse justify-content-end" id="tekNavbar">
+      <ul class="navbar-nav tek-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="staff.html">Staff</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="testimonials.html">Clients</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">Frequently Asked Questions</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="location.html">Location</a>
+        </li>
+
+      </ul>
+    </div>
   </div>
 </nav>
 
-
+  <!-- HERO -->
   <section class="da-hero">
     <div class="container text-center">
       <h1 class="da-hero-title">TEK Accessories</h1>
@@ -48,36 +87,56 @@
         A refined selection of accessories designed to complement every style
       </p>
 
-      <div class="da-offer-animator">
+      <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
-  <div class="da-offer-card da-slide slide-1">
-    <img src="img/watches.jpg" class="da-offer-img">
-    <div class="da-offer-content">
-      <h4>Watches</h4>
-      <p>Precision-crafted watches that combine durability, accuracy and modern design.</p>
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <div class="da-offer-card">
+        <img src="img/watches.jpg" class="da-offer-img">
+        <div class="da-offer-content">
+          <h4>Watches</h4>
+          <p>Precision-crafted watches that combine durability, accuracy and modern design.</p>
+        </div>
+      </div>
     </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <div class="da-offer-card">
+        <img src="img/jewelry.jpg" class="da-offer-img">
+        <div class="da-offer-content">
+          <h4>Jewelry</h4>
+          <p>Elegant jewelry pieces designed to add a touch of sophistication to your look.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="carousel-item">
+      <div class="da-offer-card">
+        <img src="img/accessories.png" class="da-offer-img">
+        <div class="da-offer-content">
+          <h4>Accessories</h4>
+          <p>Carefully selected accessories that complete your outfit with confidence and style.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="da-offer-card da-slide slide-2">
-    <img src="img/jewelry.jpg" class="da-offer-img">
-    <div class="da-offer-content">
-      <h4>Jewelry</h4>
-      <p>Elegant jewelry pieces designed to add a touch of sophistication to your look.</p>
-    </div>
-  </div>
+  <!-- CONTROLS -->
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#offerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
 
-  <div class="da-offer-card da-slide slide-3">
-    <img src="img/accessories.png" class="da-offer-img">
-    <div class="da-offer-content">
-      <h4>Accessories</h4>
-      <p>Carefully selected accessories that complete your outfit with confidence and style.</p>
-    </div>
-  </div>
-
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#offerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
 
-
-      </div>
     </div>
   </section>
 
@@ -129,7 +188,6 @@
       </p>
     </div>
   </section>
-
 
 <footer class="da-footer">
   <div class="container">
